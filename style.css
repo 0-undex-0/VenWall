@@ -893,7 +893,7 @@ body {
 }
 
 .checkbox-wrapper-4 .cbx:hover span:first-child {
-    border-color: #f2853c
+    border-color: #8e3cf2
 }
 
 .checkbox-wrapper-4 .inp-cbx {
@@ -902,8 +902,8 @@ body {
 }
 
 .checkbox-wrapper-4 .inp-cbx:checked+.cbx span:first-child {
-    background: #f2853c;
-    border-color: #f2853c;
+    background: #a93cf2;
+    border-color: #ac3cf2;
     animation: wave-4 .4s ease
 }
 
