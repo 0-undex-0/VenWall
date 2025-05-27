@@ -9,11 +9,12 @@
     const store = reactive({ firstCounter: 1, secondCounter: 1, resetFirstCounter() { this.firstCounter = 1 }, resetSecondCounter() { this.secondCounter = 1 }, incFirstCounter() { this.firstCounter++ }, incSecondCounter() { this.secondCounter++ } })
     setInterval(() => { store.firstCounter === 1 ? store.incFirstCounter() : store.firstCounter === 2 ? store.incFirstCounter() : store.resetFirstCounter() }, 3000), setInterval(() => { store.secondCounter === 1 ? store.incSecondCounter() : store.secondCounter === 2 ? store.incSecondCounter() : store.resetSecondCounter() }, 3000), setTimeout(() => {store.firstCounter = 2}, 500), setTimeout(() => {store.secondCounter = 2}, 500), createApp({store}).mount()
   </script>
-<main class="flex justify-center flex-col bg-neutral-950 gap-20 h-screen items-center overflow-hidden selection:bg-orange-800/10">
+<main class="flex justify-center flex-col bg-neutral-950 gap-20 h-screen items-center overflow-hidden selection:bg-purple-800/10">
     <div class="flex justify-center flex-col max-w-7xl mx-auto p-16 px-8">
         <div class="items-center justify-center text-center xl:gap-16">
             <div class="items-center gap-12 general-animation grid md:pb-0 pb-36 xl:gap-8">
-                <h1 class="font-[Raleway] font-bold text-4xl text-white xl:text-6xl">Bot check<br><br>::CAPTCHA_BOX::</h1>
+                <h1 class="font-[Raleway] font-bold text-4xl text-white xl:text-6xl">Bot check</h1>
+                <h1 class="font-[Raleway] font-bold text-2xl text-white xl:text-4xl select-auto">::CAPTCHA_BOX::</h1>
             </div>
         </div>
     </div>
