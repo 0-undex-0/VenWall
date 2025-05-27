@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Moonux - Проверка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+:root {
+  --card-bg: #000000a9;
+  --card-bg-lighter: #00000000;
+  --accent: #c70000;
+  --accent2: #ff3c3c;
+  --text-main: #E2E8F0;
+  --text-secondary: #e8e8e8;
+  --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  --glow: 0 0 15px rgba(255, 64, 64, 0.553);
+  --anim-duration: 1.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 380px;
+  width: 100%;
+  margin: 1.2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(221, 78, 78, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.7rem 0;
+  letter-spacing: -.02em;
+  animation: fadeInDown .8s .2s both;
+  text-shadow: 0 0 10px rgba(255, 125, 125, 0.3);
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.copy {
+  color: var(--text-secondary);
+  animation: fadeInUp .8s 1s both;
+  margin-top: 2rem;
+}
+
+.link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--accent2);
+}
+
+@media (max-width: 580px) {
+  .container {
+    max-width: 95vw;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  
+  .copy {
+    right: 4px;
+    top: 8px;
+    padding: 4px 18px;
+  }
+
+  .sphere {
+    filter: blur(30px);
+  }
+}
+</style>
+<body>
+  <div class="container">
+    <h1>Access Denied</h1>
+  </div>
+  <div class="copy"><a class="link">Protected by VenWall</a></div>
+</body>
+</html>
