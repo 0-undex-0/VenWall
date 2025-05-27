@@ -742,7 +742,7 @@ body {
 }
 
 .ellipsis {
-    background: #fc6d25;
+    background: #9825fc;
     opacity: .2;
     filter: blur(200px);
     -webkit-user-drag: none;
@@ -760,8 +760,8 @@ body {
     transform: translateZ(0)
 }
 
-.ellipsis-red {
-    background: #fcaa25;
+.ellipsis-two {
+    background: #a625fc;
     opacity: .2;
     filter: blur(200px);
     -webkit-user-drag: none;
@@ -780,7 +780,7 @@ body {
 }
 
 .ellipsis-third {
-    background: #fc2525;
+    background: #9825fc;
     opacity: .2;
     filter: blur(200px);
     -webkit-user-drag: none;
